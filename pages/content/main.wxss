@@ -1,0 +1,33 @@
+.slide-image{
+    height: 300rpx;
+    width: 100%
+}
+.section{
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#F0F0F0;
+    padding:10rpx;
+}
+.flex-wrp{
+    background-color:#fff;
+    padding:10rpx;
+    flex-direction:column;
+}
+.flex-item{
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    height: 100rpx;
+    padding: 20rpx 0;
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.titContent{
+    width:80%;
+    height: 100%
+}
+.titImg{
+    width:20%;
+    height: 100%;
+}

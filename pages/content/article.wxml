@@ -1,0 +1,14 @@
+<view class="art_container">
+   <view class="art_title">{{art_arrty[articleId].title}}</view>
+   <view class="art_date">
+      <text class="date">{{art_arrty[articleId].date}}</text>
+      <text class="company">{{art_arrty[articleId].company}}</text>
+   </view>
+   <view class="art_summary">{{art_arrty[articleId].summary}}</view>
+   <image class="art_img pic" src="{{art_arrty[articleId].picUrl}}"></image>
+   <block class="art_content" 
+   wx:for="{{art_arrty[articleId].par_arrty}}">
+     <view class="paragraph">{{item.paragraph}}</view>
+   </block>
+   <image class="art_img logo" src="/image/article/c_common.jpg"></image>
+</view>

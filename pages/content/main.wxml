@@ -1,0 +1,15 @@
+<swiper class="header_swiper" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="section">
+  <view  class="flex-wrp">
+    <view class="flex-item" data-index="{{index}}" bindtap="getDetail" wx:for="{{attry}}">
+      <view class="titContent">{{item.title}}</view>
+      <image class="titImg" src="{{item.img}}"></image>
+    </view>
+  </view >
+</view>

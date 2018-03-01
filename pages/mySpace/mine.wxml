@@ -1,0 +1,36 @@
+<view class="myContainer">
+    <view class="section">
+        <view class="my-item">
+            <text class="myLable">头像</text>
+            <image class="myDetail myaVatar" 
+            src="{{userInfo.avatarUrl}}" ></image>
+        </view>
+        <view class="my-item">
+            <text class="myLable">昵称</text>
+            <text class="myDetail">彩云之南</text>
+        </view>
+        <view class="my-item">
+            <text class="myLable">微信号</text>
+            <text class="myDetail">****</text>
+        </view>
+        <view class="my-item">
+            <text class="myLable">二维码名片</text>
+            <image class="myDetail QRcode" 
+            src="/image/QR.png"></image>
+        </view>
+        <view class="my-item">
+            <text class="myLable">我的地址</text>
+            <text class="myDetail">火星</text>
+        </view>
+    </view>
+    <view class="section">
+        <view class="my-item" wx:for="{{myarry}}">
+            <text class="myLable">
+            {{item.lable}}
+            </text>
+            <text class="myDetail">
+            {{item.detail}}
+            </text>
+        </view>
+    </view>
+</view>
